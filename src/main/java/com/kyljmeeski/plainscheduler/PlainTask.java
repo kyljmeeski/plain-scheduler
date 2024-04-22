@@ -12,6 +12,12 @@ public class PlainTask implements Task {
         this(job, frequency.frequency());
     }
 
+    /**
+     * Constructs a PlainTask with the provided job and interval.
+     *
+     * @param job      the job to execute
+     * @param interval the interval in milliseconds between job executions
+     */
     public PlainTask(Runnable job, int interval) {
         this.job = job;
         this.interval = interval;

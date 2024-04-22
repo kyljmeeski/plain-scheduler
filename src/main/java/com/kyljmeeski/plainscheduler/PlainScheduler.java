@@ -5,6 +5,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
+/**
+ * Implementation of the Scheduler interface that schedules tasks using a thread pool.
+ */
 public class PlainScheduler implements Scheduler {
 
     private final ExecutorService executorService = Executors.newCachedThreadPool();
